@@ -6,6 +6,8 @@ public class Constants {
     public static final int RESOURCE_SERVICE_PORT = 1111;
     public static final String SONG_SERVICE_ID = "SONGSERVICE";
     public static final int SONG_SERVICE_PORT = 1112;
+    public static final String STORAGE_SERVICE_ID = "STORAGESERVICE";
+    public static final int STORAGE_SERVICE_PORT = 1115;
     public static final String DISCOVER_CLIENT_DESCRIPTION = "Custom description Discovery Client";
     public static final String CURRENT_SERVICE_ID = "ApiGateway";
     public static final String LOCALHOST_LOWERCASE = "localhost";
