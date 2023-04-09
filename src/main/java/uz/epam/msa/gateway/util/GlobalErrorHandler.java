@@ -21,10 +21,10 @@ import java.util.Map;
 @Component
 @Order(-2)
 @Slf4j
-public class ErrorHandler extends AbstractErrorWebExceptionHandler {
+public class GlobalErrorHandler extends AbstractErrorWebExceptionHandler {
 
-    public ErrorHandler(GlobalErrorAttributes g, ApplicationContext applicationContext,
-                        ServerCodecConfigurer serverCodecConfigurer) {
+    public GlobalErrorHandler(GlobalErrorAttributes g, ApplicationContext applicationContext,
+                              ServerCodecConfigurer serverCodecConfigurer) {
         super(g, new WebProperties.Resources(), applicationContext);
         super.setMessageWriters(serverCodecConfigurer.getWriters());
         super.setMessageReaders(serverCodecConfigurer.getReaders());
