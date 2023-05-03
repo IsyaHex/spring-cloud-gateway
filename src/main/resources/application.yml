@@ -18,6 +18,10 @@ spring:
           uri: lb://STORAGESERVICE
           predicates:
             - Path=/storages/**
+        - id: kibana
+          uri: http://localhost:5601
+          predicates:
+            - Path=/**
 eureka:
   client:
     serviceUrl:
