@@ -37,3 +37,16 @@ management:
     web:
       exposure:
         include: gateway
+security:
+  oauth2:
+    client:
+      registration:
+        msa-course:
+          client-id: microservices-course
+          client-secret: microservices-course-secret
+          authorization-grant-type: authorization,password,refresh_token,password,client_credentials
+      provider:
+        msa-course:
+          token-uri: http://localhost:1116/api/auth/authserver/oauth/token
+          authorization-uri: http://localhost:1116/api/auth/authserver/oauth/authorize
+          user-info-uri: http://localhost:1116/api/auth/user
